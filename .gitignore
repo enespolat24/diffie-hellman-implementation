@@ -1,3 +1,17 @@
-/client/.env
-/server/.env
+# Ignore all .env files
+*.env
+# or alternatively specify each location explicitly
+client/.env
+server/.env
 .env
+
+# Other typical entries for Go projects
+*.exe
+*.test
+*.log
+*.tmp
+*.cache
+*.pid
+*.swp
+*.DS_Store
+vendor/
