@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    networks:
+      - client-server
+    ports:
+      - "17:17"
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - client-server
+    depends_on:
+      - server
+    environment:
+      SERVER_ADDRESS: "server:17"
+
+networks:
+  client-server:
+    driver: bridge
