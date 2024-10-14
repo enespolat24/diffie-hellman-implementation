@@ -26,7 +26,7 @@ This project implements a secure messaging application using the Diffie-Hellman 
     ```Bash
     PRIME_NUMBER=2
     ```
-3. **Do Not forget This Line for Client ENV**
+3. **Do Not forget This Line for Client ENV** <br>
      *we need this line for uncontainerised runtime env*
     ```
     SERVER_ADRESS=http://localhost:17
