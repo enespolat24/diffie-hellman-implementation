@@ -1,17 +1,42 @@
-# Ignore all .env files
-*.env
-# or alternatively specify each location explicitly
-client/.env
-server/.env
-.env
+# Ignore Go binaries
+**/*.exe
+**/*.exe~
+**/*.out
 
-# Other typical entries for Go projects
-*.exe
-*.test
+# Ignore vendor directory
+/vendor/
+
+# Ignore Go module files
+/go.mod
+/go.sum
+/client/go.mod
+/client/go.sum
+/server/go.mod
+/server/go.sum
+
+# Ignore Docker files
+**/Dockerfile
+**/docker-compose.yml
+
+# Ignore build output
+**/build/
+**/dist/
+
+# Ignore log files
 *.log
+
+# Ignore temporary files
 *.tmp
-*.cache
-*.pid
+*.temp
+*.bak
 *.swp
-*.DS_Store
-vendor/
+*.swo
+
+# Ignore IDE or editor-specific files
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
