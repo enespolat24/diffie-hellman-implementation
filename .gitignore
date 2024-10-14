@@ -1,29 +1,3 @@
-# Ignore Go binaries
-**/*.exe
-**/*.exe~
-**/*.out
-
-# Ignore vendor directory
-/vendor/
-
-# Ignore Docker files
-**/Dockerfile
-**/docker-compose.yml
-
-# Ignore build output
-**/build/
-**/dist/
-
-# Ignore log files
-*.log
-
-# Ignore temporary files
-*.tmp
-*.temp
-*.bak
-*.swp
-*.swo
-
 # Ignore IDE or editor-specific files
 .idea/
 .vscode/
