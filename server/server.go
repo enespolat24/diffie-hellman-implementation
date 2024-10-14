@@ -84,7 +84,7 @@ func handleConnection(conn net.Conn) {
 		encryptedMsg := scanner.Bytes()
 		fmt.Println("Received Encrypted Message:", string(encryptedMsg))
 		decryptedMsg := decryptMessage(encryptedMsg, key)
-		fmt.Println("Received Decrypted Message:", string(decryptedMsg), "\n")
+		fmt.Printf("Received Decrypted Message: %s\n\n", string(decryptedMsg))
 	}
 }
 
